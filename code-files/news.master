@@ -1,0 +1,234 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="news.master.cs" Inherits="news" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>Hope Center</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.6.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Vegur_700.font.js"></script>
+<script type="text/javascript" src="js/Vegur_400.font.js"></script>
+<script type="text/javascript" src="js/Vegur_300.font.js"></script>
+<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">.box1 figure{behavior:url("js/PIE.htc");}</style>
+<![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page1">
+    <form id="form1" runat="server">
+    <div>
+
+    
+<div class="body1">
+  <div class="main">
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+        <h1><a href="index.html" id="logo">Hope Center</a></h1>
+        <nav>
+          <ul id="top_nav">
+            <asp:ImageButton ID="ImageButton1" runat="server" Width="50px" Height="50px" 
+                  ImageUrl="~/images/login-round-rotate.png" onclick="ImageButton1_Click"></asp:ImageButton><br />
+            <asp:Label ID="Label1" runat="server" 
+                  Font-Bold="False" Font-Italic="True" Font-Names="Calibri" Font-Size="X-Large" 
+                  ForeColor="#FBC900" Visible="False"></asp:Label>
+              </ul>
+        </nav>
+        <nav>
+          <ul id="menu">
+            <li><a href="home.aspx">Home</a></li>
+            <li><a href="mission1.aspx">Our Mission</a></li>
+            <li id="menu_active"><a href="news2.aspx">News &amp; Press</a></li>
+            <li><a href="help1.aspx">How to Help</a></li>
+            <li><a href="contact_us.aspx">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- / header -->
+    <!-- content -->
+    <article id="content" class="tabs">
+      <div class="wrapper">
+        <div class="box1">
+        <table>
+        <tr><td>
+        <div class="wrapper">
+            <section class="col1">
+              <h2><strong>F</strong>uture<span> plans</span></h2>
+              <div class="line1" >
+                <figure class="left marg_right1"><img src="images/page3_img1.jpg" alt=""></figure>
+                          <p >      
+                          
+                          
+                          Our 2016- 2020 strategy marks a major expansion of our activities to ensure we put older people at the heart of everything we do. Over the next five years we will:
+
+focus on supporting older people in greatest need – often the ‘oldest old’, their families and carers
+               </p>
+              </div>
+            </section>
+          </div>
+        </td>
+        <td><div class="wrapper">
+            <section class="col1">
+              <h2><strong>A</strong>ctivities<span></span></h2>
+              <div class="line1" >
+                <figure class="left marg_right1"><img src="images/50.jpg" alt=""></figure>
+                <p > We provide emergency relief assistance in times of natural disasters. In addition, our signature programs include clean water, neonatal resuscitation training, vision care, wheelchairs, immunizations, food production, and other community projects. </p>
+              </div>
+            </section>
+          </div></td>
+       <td><div class="wrapper">
+            <section class="col1">
+              <h2><strong>O</strong>ther<span> Information</span></h2>
+              <div class="line1" >
+                <figure class="left marg_right1"><img src="images/60.jpg" alt=""></figure>
+                <p > we believe the practice of Yoga should be available to everyone!  As a non profit, our students come first. That's why we are here - to make Health and Wellness a right of life. We offer a safe, welcoming environment for reflection, transformation and healing. We serve the community through donation based Yoga classes, youth and senior programs throughout NYC.
+      
+                </p>
+              </div>
+            </section>
+          </div></td>
+       
+       </tr>
+        
+        </table>
+
+          <%--<div class="wrapper">
+            <section class="col1">
+              <h2><strong>P</strong>ress<span>About Us</span></h2>
+              <div class="line1">
+                <figure class="left marg_right1"><img src="images/page3_img1.jpg" alt=""></figure>
+                <p class="pad_bot1"> We provide emergency relief assistance in times of natural disasters. In addition, our signature programs include clean water, neonatal resuscitation training, vision care, wheelchairs, immunizations, food production, and other community projects. </p>
+              </div>
+            </section>
+          </div>--%>
+        </div>
+      </div>
+      <div class="wrapper">
+        <ul class="nav">
+         
+          <li><a href="#2004">2010</a></li>
+          <li><a href="#2005">2011</a></li>
+          <li><a href="#2006">2012</a></li>
+          <li><a href="#2003">2013</a></li>
+          <li><a href="#2008">2014</a></li>
+          <li><a href="#2009">2015</a></li>
+          <li><a href="#2011">2016</a></li>
+          <%--<li class="selected"><a href="#2011">2011</a></li>--%>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="box2">
+          <div class="wrapper tab-content" id="2011">
+            <section class="col1">
+              <h4><span>January 31</span>2016</h4>
+              <p class="pad_bot2"><strong>Hue Children’s Shelter update</strong></p>
+              <p class="pad_bot1">The Hue Children’s Shelter residents have enjoyed some recreational activities over the summer sponsored by a very generous donor. They loved their trip to Hoi An and Danang where the children explored the cities and had fun on the beach. They went shopping at the markets for Childrens Day, and enjoyed festivities at the shelter to celebrate Mid Autumn Festival (read more on our Tumblr page).
+</p>
+              </section>
+          </div>
+          <div class="wrapper tab-content" id="2003">
+            <section class="col1">
+              <h4><span>September 11 </span>2013</h4>
+              <p class="pad_bot2"><strong>WORKSHOP HELPS PHYSICAL THERAPISTS DO MORE FOR WHEELCHAIR RECIPIENTS</strong></p>
+              <p class="pad_bot1">The JRMS director general, Dr. Khalaf Aljader, along with directors over other major JRMS divisions, attended the opening ceremony.
+
+The training program included a half-day, hands-on instruction session on wheelchair assembly where 4 JRMS staff were responsible for teaching participants about wheelchair assembly, repair, and maintenance. The workshop also trained physical and occupational therapists on how to teach wheelchair recipients to use and care for their wheelchairs. The therapists practiced wheelchair mobility skills, which gave them a feel for the practicalities and limitations of using wheelchairs.</p>
+              
+           </section>
+          </div>
+          <div class="wrapper tab-content" id="2004">
+            <section class="col1">
+              <h4><span>April 13 </span>2010</h4>
+              <p class="pad_bot2"><strong> CHARITIES SPECIALIST EMPOWERS  MOBILITY NONPROFIT</strong></p>
+              <p class="pad_bot1">The training was provided by David Jones, a physical therapist 
+                  who specializes in international health care consulting and volunteers as a 
+                  technical specialist for&nbsp; Charities. During the three-day training, MAARDEC’s management team was invited to define the current state of their operations and what they would like to see in the future. Then Jones worked with them to develop a plan to achieve their goals.</p>
+                        </div>
+                      
+                      
+                       <!-- change text........... -->
+                      
+                      
+                        <div class="wrapper tab-content" id="2005">
+            <section class="col1">
+              <h4><span>April 13 </span>2011</h4>
+              <p class="pad_bot2"><strong>RECEIVED AWARD FOR EXCELLENCE</strong></p>
+              <p class="pad_bot1">Hope centre has won the Award of Excellence in the 21st Annual Communicator Award in the Print not-for-profit category for the Annual Report 2011-12.
+              The Foundation also won the Distinction Award for the Annual Report for overall design. Established two decades ago to honour excellence in marketing and communications, this prestigious award is one of the largest of its kind in the world.</p>
+                        </div>
+
+                        <div class="wrapper tab-content" id="2006">
+            <section class="col1">
+              <h4><span>May 20 </span>2012</h4>
+              <p class="pad_bot2"><strong> VISIT OF ENGINEERING STUDENTS AND ENTHUSIASTS</strong></p>
+              <p class="pad_bot1">On May 20, 2012, more than 224 engineering students and enthusiasts from different professional and academic backgrounds gathered at the Google campuses in Bangalore.
+              They worked around the clock trying to find solutions to all kinds of challenges faced by various industrial organisations like Akshaya Patra and NASSCOM.</p>
+                        </div>
+
+                        <div class="wrapper tab-content" id="2008">
+            <section class="col1">
+              <h4><span>August 29 </span>2014</h4>
+              <p class="pad_bot2"><strong> INSPIRING STUDENT ACROSS THE BORDERS</strong></p>
+              <p class="pad_bot1">Receives Win Aung’s statement as recognition for their decade long efforts of feeding and educating the future of India. The Foundation is happy that it is able to inspire and motivate students across the borders.</p>
+                        </div>
+
+                        <div class="wrapper tab-content" id="2009">
+            <section class="col1">
+              <h4><span>May 25 </span>2015</h4>
+              <p class="pad_bot2"><strong>NEPAL EARTHQUAKE RELIEF CAMPAIGN</strong></p>
+              <p class="pad_bot1">The Earthquake Relief Centralised Kitchen Project facilitated by Umeed Foundation with Sipradian Sahayata Sanstha (SSS) and the Tata Trust in Nepal has begun serving meals on 19th June. The operations began with 1,100 evening meals being provided in Bode, and 5,500 morning meals served on 20th June.
+               The 2,500sq.ft temporary centralised kitchen is expected to cook approximately 10,000 meals a batch.</p>
+                        </div>
+
+
+                        <!-- change text........... -->
+          
+        </div>
+      </div>
+    </article>
+    <!-- / content -->
+    <!-- footer -->
+    <footer>
+      <div class="wrapper"> <a href="index.html" id="footer_logo"><span>Hope</span>Center</a>
+        <ul id="icons">
+          <li><a href="#" class="normaltip"><img src="images/icon1.gif" alt=""></a></li>
+          <li><a href="#" class="normaltip"><img src="images/icon2.gif" alt=""></a></li>
+          <li><a href="#" class="normaltip"><img src="images/icon3.gif" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <nav>
+          <ul id="footer_menu">
+            <li><a href="home.aspx">Home</a></li>
+            <li><a href="mission1.aspx">Our Mission</a></li>
+            <li class="active"><a href="news2.aspx">News &amp; Press</a></li>
+            <li><a href="help1.aspx">How to Help</a></li>
+            <li class="end"><a href="contact_us.aspx">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+          </footer>
+    <!-- / footer -->
+  </div>
+</div>
+<script type="text/javascript">    Cufon.now(); tabs.init();</script>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
